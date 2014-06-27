@@ -4,7 +4,7 @@ import module namespace csd_lsc = "https://github.com/his-interop/openinfoman/cs
 declare default element  namespace   "urn:ihe:iti:csd:2013";
 
 declare  variable $careServicesRequest as item() external;
- let $cache_doc :=/CSD/..
+ let $cache_doc :=/.
  return csd_lsc:refresh_doc($cache_doc ,$careServicesRequest/pushRequest)
 
 
