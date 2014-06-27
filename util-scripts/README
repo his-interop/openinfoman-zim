@@ -1,0 +1,33 @@
+instructions for using these scripts:
+#tested on CentOS 6
+Basex Startup script
+********************************************************************************************
+#add the basex file (start-up) into /etc/init.d/
+#make it executable : chmod +x /etc/init.d/basex
+specify run levels: 
+chkconfig basex --add
+chkconfig basex on
+#see if you can do service basex start
+
+BaseX bakup script// xml exports
+********************************************************************************************
+#add the script in /etc/cron.daily
+#make it executable
+chmod +x /etc/cron.daily/basex_backup.sh
+#test out the script:
+/etc/cron.daily/basex_backup.sh
+
+ALTERNATIVELY
+
+add a new cron job that runs this script
+crontab -e
+addd the following:
+# basex xml export backup
+@daily /etc/cron.daily/basex_backup.sh
+#
+
+ISSUES
+***********************************************************************
+startup script "restart" not working
+You will have to run stop and then start separately
+
