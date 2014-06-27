@@ -1,0 +1,453 @@
+<csd:CSD xmlns:csd="urn:ihe:iti:csd:2013">
+  <csd:organisationDirectory>
+    <csd:organization oid="rUW5X7AFRnm">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Kariba District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="VZ6yyTya8RV">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Gokwe South District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="ahBUysBZV4f">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Hurungwe District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="wfjda6WSmjZ">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Hwange District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="JWcMWB9e3W5">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Tsholotsho District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="V1cRwSFoSHz">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Lupane District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="IXkC4BXlUBt">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Umguza District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="ZMmN9Y20rfD">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Midlands Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="oVMe0ARj15X">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Manicaland Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="nVljIjXbw6R">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Masvingo Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="v8smX6cfIdv">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Matabeleland South Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="a8kXZeCOck7">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Matabeleland North Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="MGUTPgm9GAU">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Makonde District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="pQ78bKCXwti">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Chegutu District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="roYJG7AZJx2">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Guruve District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="EbkccqhP0uZ">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Mazowe District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="ux6TOBbZvt6">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Seke District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="VKyguT0SrP8">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Marondera District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="fLwQsGfy909">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Makoni District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="CnQOclK5jxk">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Buhera District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="qysbx02YLKI">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Chipinge District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="lzeRGBr1iiU">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Mutare District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="vzAUq3IIibH">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Nyanga District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="rP0Hu6NiXZm">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Mwenezi District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="whpubIpYSTb">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Chiredzi District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="ffwxgte6q3p">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Zaka District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="O5dih53Gqoc">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Masvingo District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="pZZScktxk78">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Chivi District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="OquRHWprXla">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Eastern District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="Vj0tfl1HlO9">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Binga District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="wLbEvDBVFgC">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Matobo District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="TUIurFwosmv">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Nkayi District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="oyDGzi2wgdP">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mn Bubi District</csd:primaryName>
+      <csd:parent oid="a8kXZeCOck7"/>
+    </csd:organization>
+    <csd:organization oid="DT0eXd2QTTu">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Insiza District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="MyBZnohml3M">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Gwanda District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="XEZY5PK581K">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Umzingwane District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="msJbRmjmVWY">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Bikita District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="qfcd5CRKOj6">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Harare Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="wBC0xMuAaFZ">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Mashonaland West Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="CVKYfv6irEO">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Mashonaland East Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="bWa0xtpCuC2">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu Bulawayo Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="uUuSPY52AuF">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Zvishavane District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="nGWORV2Ipwi">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Bindura District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="uPB4i81dHKF">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Shamva District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="WSgzOybiqyJ">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Mount Darwin District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="Ztwt9TETF9D">
+      <csd:codedType code="2" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Mashonaland Central Province</csd:primaryName>
+      <csd:parent oid="uLFWBf4qXuv"/>
+    </csd:organization>
+    <csd:organization oid="Ri7bnppl9cQ">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Centenary District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="NZGLd0SYt8f">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Rushinga District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="kjgiHiQBzms">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Mudzi District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="hs3Ilevr8yC">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Goromonzi District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="HvNZ9bAFvAw">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Murewa District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="PG0ewLXMT2q">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Kwekwe District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="QdiEFGOP0cr">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Gweru District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="YpCKLY1rXUj">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Shurugwi District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="Yd5BmwJToLp">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Chirumhanzu District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="LETTxE4JPJu">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Hwedza District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="gveuTEr7Zk6">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Mberengwa District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="wsiS4rgfTm1">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu Mpilo Central Hospital District</csd:primaryName>
+      <csd:parent oid="bWa0xtpCuC2"/>
+    </csd:organization>
+    <csd:organization oid="HOlb2wJQI4C">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu Ingutsheni Central Hospital District</csd:primaryName>
+      <csd:parent oid="bWa0xtpCuC2"/>
+    </csd:organization>
+    <csd:organization oid="S1cZEJTerpe">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Harare Central Hospital District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="DC2oHCck0rA">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Infectious Diseases Hospital District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="adRrJtX9vjF">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mv Gutu District</csd:primaryName>
+      <csd:parent oid="nVljIjXbw6R"/>
+    </csd:organization>
+    <csd:organization oid="w0zVynm9LvP">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mi Gokwe North District</csd:primaryName>
+      <csd:parent oid="ZMmN9Y20rfD"/>
+    </csd:organization>
+    <csd:organization oid="I5bcpyKxnuZ">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Zvimba District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="mk2qcpB2N56">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mc Mbire District</csd:primaryName>
+      <csd:parent oid="Ztwt9TETF9D"/>
+    </csd:organization>
+    <csd:organization oid="tBte4wcbA96">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Sanyati District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="vs63HE6TkAg">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>mw Mhondoro District</csd:primaryName>
+      <csd:parent oid="wBC0xMuAaFZ"/>
+    </csd:organization>
+    <csd:organization oid="KgKiMe4EZq3">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Beitbridge District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="QE95U8rDHjp">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu NSC District</csd:primaryName>
+      <csd:parent oid="bWa0xtpCuC2"/>
+    </csd:organization>
+    <csd:organization oid="lIFrKsoRdXv">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu Emakhandeni District</csd:primaryName>
+      <csd:parent oid="bWa0xtpCuC2"/>
+    </csd:organization>
+    <csd:organization oid="QKOSf6Y7Q3Y">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu Nkulumane District</csd:primaryName>
+      <csd:parent oid="bWa0xtpCuC2"/>
+    </csd:organization>
+    <csd:organization oid="KrJFStwra1P">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>bu United Bulawayo District Hospital</csd:primaryName>
+      <csd:parent oid="bWa0xtpCuC2"/>
+    </csd:organization>
+    <csd:organization oid="MPQwQf30hAo">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Bulilima District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="mb8v6MsONme">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ms Mangwe District</csd:primaryName>
+      <csd:parent oid="v8smX6cfIdv"/>
+    </csd:organization>
+    <csd:organization oid="hut9rTqJMa4">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Chitungwiza Urban District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="IEbd3BTAeX3">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Mutoko District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="tJ58ECerp8J">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Chikomba District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="E3OyRVljytU">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Parirenyatwa Hospital District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="rTHWoD446Hh">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Harare Central South Eastern District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="UIdq4RFJRHA">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha North Western District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="KOCEvUKp2iV">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Northern District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="tWp1oTwghJa">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha West South West District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="pAI4j6pt14e">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha South Western District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="AKeWzL4UJHx">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Southern District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="cbTYzvCaYUv">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ha Western District</csd:primaryName>
+      <csd:parent oid="qfcd5CRKOj6"/>
+    </csd:organization>
+    <csd:organization oid="M9m516j0wdc">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>me Uzumba Maramba Pfungwe District</csd:primaryName>
+      <csd:parent oid="CVKYfv6irEO"/>
+    </csd:organization>
+    <csd:organization oid="xlZvpL7ym66">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Mutare City District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="QOar4hKGx3q">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Chimanimani District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+    <csd:organization oid="uLFWBf4qXuv">
+      <csd:codedType code="1" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>zw Zimbabwe Ministry of Health</csd:primaryName>
+    </csd:organization>
+    <csd:organization oid="D1Olw1SkFTH">
+      <csd:codedType code="3" codingScheme="dhis.mohcc.gov.zw:orglevel"/>
+      <csd:primaryName>ma Mutasa District</csd:primaryName>
+      <csd:parent oid="oVMe0ARj15X"/>
+    </csd:organization>
+  </csd:organisationDirectory>
+</csd:CSD>
