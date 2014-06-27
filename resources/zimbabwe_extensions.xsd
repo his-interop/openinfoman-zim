@@ -52,4 +52,10 @@
             <xs:element minOccurs="0" name="description" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="pushRequest">
+        <xs:sequence>
+            <xs:element name="CSD" type="csd:CSD"/>       
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
