@@ -19,19 +19,17 @@ declare variable $careServicesRequest as item() external;
 
 
 (:Get the search terms passed in the request :)
-let $search_terms := replace(
-functx:trim(upper-case(string(xs:string($careServicesRequest/os:searchTerms/text())))),"-","")
+let $cleaner:=function($text){ replace(
+functx:trim(upper-case(string(xs:string($text)))),"-","") }
+
+let $search_terms := $cleaner($careServicesRequest/os:searchTerms/text())
 
 (:Find the matching providers -- to be customized for your search:)
 let $matched_providers :=  
   for $provider in /csd:CSD/csd:providerDirectory/csd:provider
-  let $id := replace(
-functx:trim(upper-case(string($provider/csd:otherID[@assigningAuthorityName="mohaffairs.org.zw"]/@code))),"-","")
-
+  let $id := $cleaner($provider/csd:otherID[@assigningAuthorityName="mohaffairs.org.zw"]/@code)
   where exists($search_terms) and exists($id) and ($id = $search_terms)
   return $provider  
-
-
 
 (:Produce the feed in the neccesary format :)
 return osf:create_feed_from_entities($matched_providers,$careServicesRequest)
