@@ -19,7 +19,9 @@ declare variable $careServicesRequest as item() external;
 
 
 (:Get the search terms passed in the request :)
-let $cleaner:=function($text){ replace(
+let $cleaner:=function($texts){ 
+for $text in ($texts)
+return replace(
 functx:trim(upper-case(string(xs:string($text)))),"-","") }
 
 let $search_terms := $cleaner($careServicesRequest/os:searchTerms/text())
