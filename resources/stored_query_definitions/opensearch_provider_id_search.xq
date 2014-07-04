@@ -1,4 +1,4 @@
-import module namespace osf = "https://github.com/his-interop/openinfoman/opensearch_feed";
+import module namespace osf = "https://github.com/openhie/openinfoman/adappter/opensearch";
 import module namespace functx = 'http://www.functx.com';
 
 declare namespace csd =  "urn:ihe:iti:csd:2013";
