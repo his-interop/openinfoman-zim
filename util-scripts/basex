@@ -16,8 +16,9 @@ export PATH
 #
 start() {
 echo "Starting BaseX server: "
-   
-exec $BASEX_HOME/bin/basexhttp -S
+# cd into $BASEX_HOME/bin for openinfoman implementation
+cd $BASEX_HOME/bin/    
+exec ./basexhttp -S
        ### Create the lock file ###
         touch /var/lock/subsys/basex
 
