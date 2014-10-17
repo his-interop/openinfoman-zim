@@ -5,7 +5,8 @@
   xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
-  uuid="df942040-0298-11e4-b64e-1803739a827c" content-type="text/xml">
+  urn="urn:openhie.org:openinfoman-zim:provider_search"
+   content-type="text/xml">
   <description>
     Get Single Provider for a special HITRAC Zimbabwe use case.
   </description>

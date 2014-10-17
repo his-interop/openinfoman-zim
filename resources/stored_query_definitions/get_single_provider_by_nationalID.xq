@@ -25,12 +25,12 @@ declare variable $careServicesRequest as item() external;
       return if (count($provs0) = 1) then
         let $provider :=$provs0[1]
         let $resolved_facilities :=for $facility in $provider/facilities/facility
-                                    let $resolved_facility :=/CSD/facilityDirectory/facility[@oid=$facility/@oid]
-                                   return <resolvedFacility oid='{$resolved_facility/@oid}'>{$resolved_facility/*}</resolvedFacility>
+                                    let $resolved_facility :=/CSD/facilityDirectory/facility[upper-case(@entityID)=upper-case($facility/@entityID)]
+                                   return <resolvedFacility entityID='{$resolved_facility/@entityID}'>{$resolved_facility/*}</resolvedFacility>
 
         let $resolved_organizations :=for $organization in $provider/organizations/organization
-                                    let $resolved_organization :=/CSD/organizationDirectory/organization[@oid=$organization/@oid]
-                                     return <resolvedOrganization oid='{$resolved_organization/@oid}'>
+                                    let $resolved_organization :=/CSD/organizationDirectory/organization[upper-case(@entityID)=upper-case($organization/@entityID)]
+                                     return <resolvedOrganization entityID='{$resolved_organization/@entityID}'>
                                               {$resolved_organization/*}
                                             </resolvedOrganization>
 
@@ -42,7 +42,7 @@ declare variable $careServicesRequest as item() external;
                            </extension> 
                         else ()
          return
-	<provider oid='{$provider/@oid}'>
+	<provider entityID='{$provider/@entityID}'>
            {($provider/*,$extension)}
         </provider>
       else 

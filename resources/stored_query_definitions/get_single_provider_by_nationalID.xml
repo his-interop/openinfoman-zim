@@ -5,7 +5,8 @@
   xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
-  uuid="41c78d3e-e005-442a-80ff-66d87419bbb0" content-type="text/xml">
+  urn="urn:openhie.org:openinfoman-zim:search_national_id" 
+  content-type="text/xml">
   <description>
     Get Single Provider by National ID for a special HITRAC Zimbabwe use case.
   </description>

@@ -5,7 +5,7 @@
   xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
-  uuid="1dbbf594-53ec-4044-9f76-70c37eebc54f"
+  urn="urn:openhie.org:openinfoman-zim:CSV_export_trainsmart_participants" 
   content-type="text/csv"
   >
   <description>

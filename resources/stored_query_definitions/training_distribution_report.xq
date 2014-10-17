@@ -14,15 +14,15 @@ declare variable $careServicesRequest as item() external;
 (:lookup current deployment of a provider :)
 let $get_current_deployment_province := function($provider)  {
   let $facs := $provider/csd:facilities/csd:facility
-  let $start_dates :=  distinct-values($facs/csd:extension[@type='deployment_details' and @oid='2.25.62572576096234591446887698759906520253']/start_date)
+  let $start_dates :=  distinct-values($facs/csd:extension[@type='deployment_details' and @urn='urn:oid:2.25.62572576096234591446887698759906520253']/start_date)
   (:maybe no start_date data was uploaded yet:)
   let $fac:= if (count($start_dates) = 0) then
     $facs[1]
   else 
     let $max_start_date := max($start_dates)
-    return ($facs[ ./csd:extension[@type='deployment_details' and @oid='2.25.62572576096234591446887698759906520253' and ./start_date = $max_start_date]])[1]
+    return ($facs[ ./csd:extension[@type='deployment_details' and @oid='urn:oid:2.25.62572576096234591446887698759906520253' and ./start_date = $max_start_date]])[1]
    (:now have the most current facility (hopefully).  now lookup province:)
-  let $fac_record := /csd:CSD/csd:facilityDirectory/csd:facility[@oid = $fac/@oid]
+  let $fac_record := /csd:CSD/csd:facilityDirectory/csd:facility[upper-case(@entityID) = upper-case($fac/@entityID)]
   let $province := ($fac_record/csd:address[@type='PHYSICAL']/csd:addressLine[@component='PROVINCE']/text())[1]
   return $province
 }
@@ -32,7 +32,7 @@ let $get_current_deployment_province := function($provider)  {
 For a specified training program, get the count of all the health workers with that training program by province for trainings during the given start and end dates   
 :)
 let $get_trainings := function($training_program,$start_date,$end_date) {
-  let $all_trainings := /csd:CSD/csd:providerDirectory/csd:provider/csd:extension[@type='in-service-training' and @oid='2.25.62572576096234591446887698759906520253']
+  let $all_trainings := /csd:CSD/csd:providerDirectory/csd:provider/csd:extension[@type='in-service-training' and @oid='urn:oid:2.25.62572576096234591446887698759906520253']
   let $training_instances_0:= 
     if ($training_program) then  $all_trainings[./program/text() = $training_program]
     else $all_trainings
@@ -105,26 +105,26 @@ let $get_trainings := function($training_program,$start_date,$end_date) {
   <facilityDirectory/>
   <providerDirectory>
     {
-      let $facility_oid := $careServicesRequest/facilities/facility[1]/@oid
-      let $service_oid := $careServicesRequest/facilities/facility[1]/service/@oid
+      let $facility_entityID := $careServicesRequest/facilities/facility[1]/@entityID
+      let $service_entityID := $careServicesRequest/facilities/facility[1]/service/@entityID
 	  
       (: if no provider id was provided, then this is invalid. :)
       let $provs0 := if (exists($careServicesRequest/id))
 	then csd:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/id)
       else ()   
 
-      let $provs1 := if (exists($facility_oid) and count($provs0) == 1)
+      let $provs1 := if (exists($facility_entityID) and count($provs0) == 1)
 	then 
-	   if (count ($provs0[1]/facilities/facility[@oid = $facility_oid]) > 0) then $provs0 else ()
+	   if (count ($provs0[1]/facilities/facility[upper-case(@entityID) = upper-case($facility_entityID)]) > 0) then $provs0 else ()
 	else $provs0
 
-      let $provs2 := if (exists($service_oid) and count($provs1) == 1)
+      let $provs2 := if (exists($service_entityID) and count($provs1) == 1)
 	then 
-	   if (count ($provs1[1]/facilities/facility[@oid = $facility_oid]/service[@oid = $service_oid]) > 0) then $provs1 else ()
+	   if (count ($provs1[1]/facilities/facility[upper-case(@entityID) = upper-case($facility_entityID)]/service[upper-case(@entityID) = upper-case($service_entityID)]) > 0) then $provs1 else ()
 	else $provs1
 
       return if (count($provs2) == 1) then
-	<provider oid='{$provs2[1]/@oid}'/>
+	<provider entityID='{$provs2[1]/@entityID}'/>
       else 
 	 ()
     }     
