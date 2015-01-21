@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<careServicesFunction xmlns:ev="http://www.w3.org/2001/xml-events"
-  xmlns="urn:ihe:iti:csd:2013"
-  xmlns:xforms="http://www.w3.org/2002/xforms"
+<careServicesFunction xmlns="urn:ihe:iti:csd:2013"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csd="urn:ihe:iti:csd:2013"
+  xsi:schemaLocation="urn:ihe:iti:csd:2013 CSD.xsd" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xi="http://www.w3.org/2001/XInclude"
-  xmlns:csd="urn:ihe:iti:csd:2013" 
-  uuid="a9985511-41eb-435f-aa2b-64d82671386a">
+  urn="urn:openhie.org:openinfoman-zim:push_service"
+   content-type="text/xml">
   <description>Push CSD documents up to the CSD InfoManager</description>
   <definition ><xi:include parse="text" href="pushServiceRequest.xq"/></definition>
 
