@@ -10,7 +10,7 @@
   <description>
     Get Entities from all directories
   </description>
-  <definition ><xi:include parse='text' href='get_provider_from_all_directories.xq'/></definition>
+  <definition ><xi:include parse='text' href='get_entities_from_all_directories.xq'/></definition>
   <xforms:instance>
     <careServicesRequest>
       <otherID/>

@@ -15,8 +15,8 @@ let $csds :=for $doc_name in $doc_names
 	    then csd_bl:filter_by_common_name($doc/CSD/providerDirectory/*,$careServicesRequest/commonName)
             else ()
 
-            let $facs :=  if (exists($careServicesRequest/primaryName))
-	then csd_bl:filter_by_primary_name($doc/CSD/facilityDirectory/*,$careServicesRequest/primaryName)
+            let $facs :=  if (exists($careServicesRequest/commonName))
+	then csd_bl:filter_by_primary_name($doc/CSD/facilityDirectory/*,$careServicesRequest/commonName)
       else ()
 
           
