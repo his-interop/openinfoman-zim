@@ -11,7 +11,7 @@
   <description>
     CSV export for TrainSMART for participants
   </description>
-  <definition ><xi:include parse='text' href='CSV Export_for_TrainSMART.xq'/></definition>
+  <definition ><xi:include parse='text' href='CSV_Export_for_TrainSMART.xq'/></definition>
   <xforms:instance>
     <careServicesRequest/>
   </xforms:instance>

@@ -1,5 +1,6 @@
-declare element namespace   csd = "urn:ihe:iti:csd:2013";
-declare element namespace h = "http://www.w3.org/1999/xhtml";
+import module namespace csd_bl = "https://github.com/openhie/openinfoman/csd_bl";
+declare namespace   csd  =  "urn:ihe:iti:csd:2013";
+declare namespace h  = "http://www.w3.org/1999/xhtml";
 declare variable $careServicesRequest as item() external;
 
 (: 
@@ -38,10 +39,10 @@ let $get_trainings := function($training_program,$start_date,$end_date) {
     else $all_trainings
   (: we selected all instance of IST with specified training program :)
   let $training_instances_1 := 
-    if ($start_date) then $training_instances[./start_date >= $start_date]
+    if ($start_date) then $training_instances_0[./start_date >= $start_date]
     else $training_instances_0
   let $training_instances_2 := 
-    if ($end_date) then $training_instances[./end_date <= $end_date]
+    if ($end_date) then $training_instances_1[./end_date <= $end_date]
     else $training_instances_1
 
   let $training_programs := distinct-values($training_instances_2/program/text())
@@ -56,11 +57,47 @@ let $get_trainings := function($training_program,$start_date,$end_date) {
       let $hws_by_prov := 
          for $hw in $hws 
 	 where $get_current_deployment_province($hw) = $province
+         return $hw
       return <tr><td>{$tp}</td><td>{$province}</td><td>{count($hws_by_prov)}</td></tr>
    (:should optimize so don't calculate current province twice :)
 }
 
+let $custom_doc := 
 
+<CSD xmlns:csd="urn:ihe:iti:csd:2013"  >
+  <organizationDirectory/>
+  <serviceDirectory/>
+  <facilityDirectory/>
+  <providerDirectory>
+    {
+      let $facility_entityID := $careServicesRequest/facilities/facility[1]/@entityID
+      let $service_entityID := $careServicesRequest/facilities/facility[1]/service/@entityID
+	  
+      (: if no provider id was provided, then this is invalid. :)
+      let $provs0 := if (exists($careServicesRequest/id))
+	then csd_bl:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/id)
+      else ()   
+
+      let $provs1 := if (exists($facility_entityID) and count($provs0) = 1)
+	then 
+	   if (count ($provs0[1]/facilities/facility[upper-case(@entityID) = upper-case($facility_entityID)]) > 0) then $provs0 else ()
+	else $provs0
+
+      let $provs2 := if (exists($service_entityID) and count($provs1) = 1)
+	then 
+	   if (count ($provs1[1]/facilities/facility[upper-case(@entityID) = upper-case($facility_entityID)]/service[upper-case(@entityID) = upper-case($service_entityID)]) > 0) then $provs1 else ()
+	else $provs1
+
+      return if (count($provs2) = 1) then
+	<provider entityID='{$provs2[1]/@entityID}'/>
+      else 
+	 ()
+    }     
+  </providerDirectory>
+</CSD>
+
+
+return 
 <h:html>
   <h:body>
   <h:h1>Training Distribution Report</h:h1>
@@ -83,7 +120,7 @@ let $get_trainings := function($training_program,$start_date,$end_date) {
 	$get_trainings(
 	    $careServicesRequest/training_program,
 	    $careServicesRequest/start_date,
-	    $careSericesRequest/end_date) 
+	    $careServicesRequest/end_date) 
       }
     </h:table>
   </h:div>
@@ -96,37 +133,3 @@ let $get_trainings := function($training_program,$start_date,$end_date) {
 
 
 
-
-
-
-<CSD xmlns:csd="urn:ihe:iti:csd:2013"  >
-  <organizationDirectory/>
-  <serviceDirectory/>
-  <facilityDirectory/>
-  <providerDirectory>
-    {
-      let $facility_entityID := $careServicesRequest/facilities/facility[1]/@entityID
-      let $service_entityID := $careServicesRequest/facilities/facility[1]/service/@entityID
-	  
-      (: if no provider id was provided, then this is invalid. :)
-      let $provs0 := if (exists($careServicesRequest/id))
-	then csd:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/id)
-      else ()   
-
-      let $provs1 := if (exists($facility_entityID) and count($provs0) == 1)
-	then 
-	   if (count ($provs0[1]/facilities/facility[upper-case(@entityID) = upper-case($facility_entityID)]) > 0) then $provs0 else ()
-	else $provs0
-
-      let $provs2 := if (exists($service_entityID) and count($provs1) == 1)
-	then 
-	   if (count ($provs1[1]/facilities/facility[upper-case(@entityID) = upper-case($facility_entityID)]/service[upper-case(@entityID) = upper-case($service_entityID)]) > 0) then $provs1 else ()
-	else $provs1
-
-      return if (count($provs2) == 1) then
-	<provider entityID='{$provs2[1]/@entityID}'/>
-      else 
-	 ()
-    }     
-  </providerDirectory>
-</CSD>
