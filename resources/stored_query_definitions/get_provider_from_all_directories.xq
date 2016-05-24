@@ -11,8 +11,8 @@ let $doc_names := csd_dm:registered_documents()
 let $csds :=for $doc_name in $doc_names
             let $doc := csd_dm:open_document($doc_name)
             let $provs:=      
-               if ($careServicesRequest/otherID/@code)
-	         then csd_bl:filter_by_other_id($doc/CSD/providerDirectory/*,$careServicesRequest/otherID)
+               if ($careServicesRequest/csd:requestParams/otherID/@code)
+	         then csd_bl:filter_by_other_id($doc/CSD/providerDirectory/*,$careServicesRequest/csd:requestParams/otherID)
                else ()
 
             let $facs := if (count($provs) = 1) then

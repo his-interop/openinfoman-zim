@@ -18,8 +18,8 @@ declare variable $careServicesRequest as item() external;
     {
       let $provs0 :=
          
-           if ($careServicesRequest/otherID/@code)
-	     then csd_bl:filter_by_other_id(/CSD/providerDirectory/*,$careServicesRequest/otherID)
+           if ($careServicesRequest/requestParams/otherID/@code)
+	     then csd_bl:filter_by_other_id(/CSD/providerDirectory/*,$careServicesRequest/requestParams/otherID)
            else ()   
 
       return if (count($provs0) = 1) then

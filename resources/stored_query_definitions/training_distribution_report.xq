@@ -70,12 +70,12 @@ let $custom_doc :=
   <facilityDirectory/>
   <providerDirectory>
     {
-      let $facility_entityID := $careServicesRequest/facilities/facility[1]/@entityID
-      let $service_entityID := $careServicesRequest/facilities/facility[1]/service/@entityID
+      let $facility_entityID := $careServicesRequest/csd:requestParams/facilities/facility[1]/@entityID
+      let $service_entityID := $careServicesRequest/csd:requestParams/facilities/facility[1]/service/@entityID
 	  
       (: if no provider id was provided, then this is invalid. :)
-      let $provs0 := if (exists($careServicesRequest/id))
-	then csd_bl:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/id)
+      let $provs0 := if (exists($careServicesRequest/csd:requestParams/id))
+	then csd_bl:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/csd:requestParams/id)
       else ()   
 
       let $provs1 := if (exists($facility_entityID) and count($provs0) = 1)
@@ -103,9 +103,9 @@ return
   <h:h1>Training Distribution Report</h:h1>
   <h:div class='search_parameters'>
     <h:ul>
-      <h:li>Start Date: {$careServicesRequest/start_date} </h:li>
-      <h:li>End Date:  {$careServicesRequest/end_date} </h:li>
-      <h:li>Funder:  {string($careServicesRequest/funding_institution/@code) } </h:li>
+      <h:li>Start Date: {$careServicesRequest/csd:requestParams/start_date} </h:li>
+      <h:li>End Date:  {$careServicesRequest/csd:requestParams/end_date} </h:li>
+      <h:li>Funder:  {string($careServicesRequest/csd:requestParams/funding_institution/@code) } </h:li>
     </h:ul>
   </h:div>
   <h:div class='search_results'>
@@ -118,9 +118,9 @@ return
       {
 	
 	$get_trainings(
-	    $careServicesRequest/training_program,
-	    $careServicesRequest/start_date,
-	    $careServicesRequest/end_date) 
+	    $careServicesRequest/csd:requestParams/training_program,
+	    $careServicesRequest/csd:requestParams/start_date,
+	    $careServicesRequest/csd:requestParams/end_date) 
       }
     </h:table>
   </h:div>

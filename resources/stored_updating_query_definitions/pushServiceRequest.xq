@@ -5,6 +5,6 @@ declare default element  namespace   "urn:ihe:iti:csd:2013";
 
 declare  variable $careServicesRequest as item() external;
  let $cache_doc :=/.
- return csd_lsc:refresh_doc($cache_doc ,$careServicesRequest/pushRequest)
+ return csd_lsc:refresh_doc($cache_doc ,$careServicesRequest/requestParams/pushRequest)
 
 

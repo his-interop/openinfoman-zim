@@ -24,7 +24,7 @@ for $text in ($texts)
 return replace(
 functx:trim(upper-case(string(xs:string($text)))),"-","") }
 
-let $search_terms := $cleaner($careServicesRequest/os:searchTerms/text())
+let $search_terms := $cleaner($careServicesRequest/csd:requestParams/os:searchTerms/text())
 
 (:Find the matching providers -- to be customized for your search:)
 let $matched_providers :=  

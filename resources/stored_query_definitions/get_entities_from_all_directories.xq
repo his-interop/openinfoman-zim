@@ -11,12 +11,12 @@ let $doc_names := csd_dm:registered_documents()
 
 let $csds :=for $doc_name in $doc_names
             let $doc := csd_dm:open_document($doc_name)
-            let $provs:= if(exists($careServicesRequest/commonName))
-	    then csd_bl:filter_by_common_name($doc/CSD/providerDirectory/*,$careServicesRequest/commonName)
+            let $provs:= if(exists($careServicesRequest/csd:requestParams/commonName))
+	    then csd_bl:filter_by_common_name($doc/CSD/providerDirectory/*,$careServicesRequest/csd:requestParams/commonName)
             else ()
 
-            let $facs :=  if (exists($careServicesRequest/commonName))
-	then csd_bl:filter_by_primary_name($doc/CSD/facilityDirectory/*,$careServicesRequest/commonName)
+            let $facs :=  if (exists($careServicesRequest/csd:requestParams/commonName))
+	then csd_bl:filter_by_primary_name($doc/CSD/facilityDirectory/*,$careServicesRequest/csd:requestParams/commonName)
       else ()
 
           

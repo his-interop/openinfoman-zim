@@ -16,8 +16,8 @@ declare variable $careServicesRequest as item() external;
   <providerDirectory>
     {
      
-      let $provs0 := if (exists($careServicesRequest/id/@entityID))
-	then csd_bl:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/id)
+      let $provs0 := if (exists($careServicesRequest/requestParams/id/@entityID))
+	then csd_bl:filter_by_primary_id(/CSD/providerDirectory/*,$careServicesRequest/requestParams/id)
       else ()   
 
       
